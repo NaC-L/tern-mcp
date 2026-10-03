@@ -1,0 +1,18 @@
+[project]
+name = "tern-mcp"
+version = "0.1.0"
+description = "MCP server for scripting the Tern terminal through its CLI"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp==2.3.0",
+    "psutil==7.2.2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
